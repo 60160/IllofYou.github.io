@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<!-- title page shoots you to the chapter select homepage -->
+
+<h1> <a class="Title" href=""> I'll_of_You! </a> </h1>
+
+<div class="Header">
+
+<a id="About" href="https:\\www.youtube.com"> About </a>
+<a id="Blog" href="https:\\www.youtube.com"> Blog </a>
+<a id="Gallery" href="https:\\www.youtube.com"> Gallery </a>
+
+</div>
+
+<h2> CHAPTER 10 - 16.1.16 May This be Love - Jimi Hendrix </h2>
+
+<div class="Language">
+
+<a id="ENG" href=""> ENGLISH </a>
+<a id="POR" href=""> PORTUGUESE </a>
+<a id="JAP" href=""> 日本語　</a>
+
+</div>
+
+<!-- These buttons set a variable that switches a piece of the img URL to load when the page buttons/chapter buttons are pressed -->
+
+<img class="image" id="chapterpage" src="D:\Downloads\ANIMATIONS\SKG\FIREFLY\IllofYou.github.io\Chapter10\I'll_of_You!_10_25p_001.png" alt="Comic_page" width="" height="">
+
+
+<script>
+	let	imgURLbase="D:\\Downloads\\ANIMATIONS\\SKG\\FIREFLY\\IllofYou.github.io\\Chapter10\\I'll_of_You!_10_25p_";
+	let pagecount = 1;
+	document.getElementById("chapterpage").addEventListener("click", function() {
+		pagecount++;
+		let pageindex = ("000" + pagecount).slice(-3);
+		this.src=imgURLbase+pageindex+".png";
+	});
+</script>
+
+<!-- justify from the center, so something like width/2 spacing -->
+<!-- best if you can load several images at a time for the flip book sections -->
+
+<br>
+
+<div class="Navigation">
+
+<a id="fpage" href=""> first page </a>
+<a id="pchap" href=""> previous chapter </a>
+<button id="ppage"> previous page </button>
+
+<!-- add a drop down menu for page seeking -->
+
+<button id="npage"> next page </button>
+<a id="nchap" href=""> next chapter </a>
+<a id="lpage" href=""> last page </a>
+
+</div>
+
+<br>
+
+<h2> <a class="Title" href=""> I'll_of_You! </a> </h2>
+
+</body>
+</html>
