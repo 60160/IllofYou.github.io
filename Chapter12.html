@@ -39,6 +39,28 @@
 		let pageindex = ("000" + pagecount).slice(-3);
 		this.src=imgURLbase+pageindex+".png";
 	});
+/*	
+	document.onkeydown = function (e) {
+		e = e || window.event;
+		pagecount++;
+		let pageindex = ("000" + pagecount).slice(-3);
+		document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
+		};
+*/	
+	
+	document.addEventListener('keydown', function(e) {
+		if(e.code == "ArrowRight") {
+			pagecount++;
+			let pageindex = ("000" + pagecount).slice(-3);
+			document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
+		}
+		else if(e.code == "ArrowLeft")  {
+			pagecount--;
+			let pageindex = ("000" + pagecount).slice(-3);
+			document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
+		}
+	});
+	
 </script>
 
 <!-- justify from the center, so something like width/2 spacing -->
