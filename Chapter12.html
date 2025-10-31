@@ -33,35 +33,10 @@
 
 <script>
 	let	imgURLbase="Chapter12/I'll_of_You!_12_25p_";
-	let pagecount = 1;
-	document.getElementById("chapterpage").addEventListener("click", function() {
-		pagecount++;
-		let pageindex = ("000" + pagecount).slice(-3);
-		this.src=imgURLbase+pageindex+".png";
-	});
-/*	
-	document.onkeydown = function (e) {
-		e = e || window.event;
-		pagecount++;
-		let pageindex = ("000" + pagecount).slice(-3);
-		document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
-		};
-*/	
-	
-	document.addEventListener('keydown', function(e) {
-		if(e.code == "ArrowRight") {
-			pagecount++;
-			let pageindex = ("000" + pagecount).slice(-3);
-			document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
-		}
-		else if(e.code == "ArrowLeft")  {
-			pagecount--;
-			let pageindex = ("000" + pagecount).slice(-3);
-			document.getElementById("chapterpage").src=imgURLbase+pageindex+".png";
-		}
-	});
-	
+	let chapternumber=12;
+	let pagemax= 25;
 </script>
+<script src="pageflipper.js"></script>
 
 <!-- justify from the center, so something like width/2 spacing -->
 <!-- best if you can load several images at a time for the flip book sections -->

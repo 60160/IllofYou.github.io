@@ -30,16 +30,12 @@
 
 <img class="image" id="chapterpage" src="Chapter10/I'll_of_You!_10_25p_001.png" alt="Comic_page" width="" height="">
 
-
 <script>
 	let	imgURLbase="Chapter10/I'll_of_You!_10_25p_";
-	let pagecount = 1;
-	document.getElementById("chapterpage").addEventListener("click", function() {
-		pagecount++;
-		let pageindex = ("000" + pagecount).slice(-3);
-		this.src=imgURLbase+pageindex+".png";
-	});
+	let chapternumber=10;
+	let pagemax= 70;
 </script>
+<script src="pageflipper.js"></script>
 
 <!-- justify from the center, so something like width/2 spacing -->
 <!-- best if you can load several images at a time for the flip book sections -->
