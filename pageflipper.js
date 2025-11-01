@@ -4,6 +4,7 @@
 	if(pchapter >12){pchapter=12;}
 	document.getElementById("pchap").href="Chapter"+pchapter+".html";
 	document.getElementById("nchap").href="Chapter"+nchapter+".html";
+	
 	pageselecter=document.getElementById("pageselect");
 	for (var i=1; i<=pagemax; i++){
 		var opt = document.createElement('option');

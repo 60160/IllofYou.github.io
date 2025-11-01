@@ -1,0 +1,65 @@
+body{
+}
+h1{
+	display:inline;
+}
+h2{
+	display:inline;
+}
+
+* {
+		background-color:white;
+		font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+.Title{
+	font-size: 72px;
+}
+
+.Header{
+	text-align:right;
+	display: inline;
+	padding-left:100px;
+}
+
+.ChapterTitle{
+	display:block;
+}
+
+.Language {
+	text-align:center;
+	padding:20px;
+}
+
+#lang{
+	padding-left:20px;
+}
+
+#About, #Gallery, #Blog {
+	padding-left:75px;
+}
+
+.chapterindex {
+	text-align:center;
+	display:block;
+	padding-top: 50px;
+	}
+	
+#chapter {
+	display:block;
+	padding-bottom: 20px;
+}
+
+.image{
+  display: block;
+  margin: auto;
+  width:auto;
+  height:1250px;
+  
+}
+
+.Navigation{
+  display: flex;
+  justify-content: center;
+}
