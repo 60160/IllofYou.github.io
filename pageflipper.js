@@ -13,11 +13,12 @@
 		pageselecter.appendChild(opt);
 	}
 	document.addEventListener('keydown', function(e) {
-		e.preventDefault();
 		if(e.code == "ArrowRight") {
+			e.preventDefault();
 			flipforward();
 		}
 		else if(e.code == "ArrowLeft")  {
+			e.preventDefault();
 			flipbackward();
 		}
 	});
