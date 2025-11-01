@@ -29,12 +29,6 @@
 <div class="Comicbody">
 
 <img class="image" id="chapterpage" src="Chapter12/I'll_of_You!_12_25p_001.png" alt="Comic_page" width="" height="">
-<script>
-	let	imgURLbase="Chapter12/I'll_of_You!_12_25p_";
-	let chapternumber=12;
-	let pagemax= 25;
-</script>
-<script src="pageflipper.js"></script>
 <!-- justify from the center, so something like width/2 spacing -->
 <!-- best if you can load several images at a time for the flip book sections -->
 
@@ -46,7 +40,8 @@
 <a id="pchap" href=""> previous chapter </a>
 <button id="ppage" onclick="flipbackward"> previous page </button>
 
-<!-- add a drop down menu for page seeking -->
+<select id="pageselect" onchange="setpage()">1
+</select>
 
 <button id="npage" onclick="flipforward()"> next page </button>
 <a id="nchap" href="Chapter11.html"> next chapter </a>
@@ -54,9 +49,14 @@
 
 </div>
 
-<br>
-
 <h2> <a class="Title" href="index.html"> I'll_of_You! </a> </h2>
+
+<script>
+	let	imgURLbase="Chapter12/I'll_of_You!_12_25p_";
+	let chapternumber=12;
+	let pagemax= 25;
+</script>
+<script src="pageflipper.js"></script>
 
 </body>
 </html>
