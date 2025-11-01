@@ -54,12 +54,34 @@ h3{
 	padding-bottom: 20px;
 }
 
+.Comicbody{
+	position:relative;
+}
+
+#back{
+	width:50%;
+	height:1250px;
+	background:blue;
+	opacity:0%;
+	position:absolute;
+	left:0%
+}
+#forward{
+	width:50%;
+	height:1250px;
+	background:red;
+	opacity:0%;
+	position:absolute;
+	left:50%
+}
+
+
 .image{
-  display: block;
-  margin: auto;
-  width:auto;
-  height:1250px;
-  
+	clear: none;
+	display: block;
+	margin: auto;
+	width:auto;
+	height:1250px;
 }
 
 .Navigation{
